@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GB Pharma</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css2?family=Metal+Mania&family=Sriracha&display=swap" rel="stylesheet">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="gbpharma.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+      <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.compat.css"
+  />
+  
+
+
+ 
+
+</head>
+
+<body>
+    <section id="nav-bar">
+        <nav class="navbar navbar-expand-lg navbar-light ">
+            <img src="img/logo.png" class="ml-2" alt="..." height="60px">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto ml-auto ">
+                    <li class="nav-item active">
+                        <a class="nav-link mx-2" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-2" href="#card">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-2" href="#about">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-2" href="#contact">Contact Us</a>
+                    </li>
+
+<div class="animation start-home"></div>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search for the medicines"
+                        aria-label="Search">
+                    <button class="btn btn-outline-dark my-2 mr-5 my-sm-0" type="submit">Search</button>
+                </form>
+                
+                
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-outline-danger mx-2" data-toggle="modal" data-target="#loginModal">
+                    Log in
+                </button>
+
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-outline-danger mx-2" data-toggle="modal" data-target="#signupModal">
+                    Sign Up
+                </button>
+                
+               
+
+
+
+
+            </div>
+        </nav>
+    </section>
+
+
+     <!-- Modal -->
+     <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel"
+     aria-hidden="true">
+     <div class="modal-dialog">
+         <div class="modal-content">
+             <div class="modal-header">
+                 <h5 class="modal-title" id="loginModalLabel">Log in</h5>
+                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                     <span aria-hidden="true">&times;</span>
+                 </button>
+             </div>
+             <div class="modal-body">
+                 <form>
+                     <div class="form-group">
+                         <label for="exampleInputEmail1">Email address</label>
+                         <input type="email" class="form-control" id="exampleInputEmail1"
+                             aria-describedby="emailHelp">
+                         <small id="emailHelp" class="form-text text-muted">We'll never share your
+                             email with anyone else.</small>
+                     </div>
+                     <div class="form-group">
+                         <label for="exampleInputPassword1">Password</label>
+                         <input type="password" class="form-control" id="exampleInputPassword1">
+                     </div>
+                     <div class="form-group form-check">
+                         <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                         <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                     </div>
+                   
+                     <button type="submit" class="btn btn-primary">Log in</button>
+                 </form>
+             </div>
+             <div class="modal-footer">
+                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                
+             </div>
+         </div>
+     </div>
+ </div>
+
+
+
+
+
+ <!-- Modal -->
+ <div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="signupModalLabel"
+     aria-hidden="true">
+     <div class="modal-dialog">
+         <div class="modal-content">
+             <div class="modal-header">
+                 <h5 class="modal-title" id="signupModalLabel">Sign Up</h5>
+                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                     <span aria-hidden="true">&times;</span>
+                 </button>
+             </div>
+             <div class="modal-body">
+                 <form action="">
+                     <div class="form-group">
+                         <label for="uname">Username</label>
+                         <input type="text" class="form-control" id="uname" placeholder="Enter your Name"
+                             name="uname">
+                     </div>
+                     <div class="form-group">
+                         <label for="name">First Name</label>
+                         <input type="text" class="form-control" id="fname"
+                             placeholder="Enter your First Name" name="fname">
+                     </div>
+                     <div class="form-group">
+                         <label for="name">Last Name</label>
+                         <input type="text" class="form-control" id="lname"
+                             placeholder="Enter your Last Name" name="lname">
+                     </div>
+                     <div class="form-group">
+                         <label for="email">Your Email</label>
+                         <input type="email" class="form-control" id="email"
+                             placeholder="Enter your Email" name="email">
+                     </div>
+                     <div class="form-group">
+                         <label for="password">Choose a password</label>
+                         <input type="password" class="form-control" id="password"
+                             placeholder="Choose a password" name="password">
+                     </div>
+                     <div class="form-group">
+                         <label for="password2">Retype a password</label>
+                         <input type="password" class="form-control" id="password2"
+                             placeholder="Retype your password" name="password2">
+                     </div>
+                     <!-- <div class="g-recaptcha" data-sitekey="6LdvcqwUAAAAACmPYNVoiJA7D84xLSQQt5g9p10m"></div> -->
+                     <input type="hidden" name="path" value="/">
+                     <button type="submit" class="btn btn-danger mt-2">Sign Up</button>
+                 </form>
+             </div>
+             <div class="modal-footer">
+                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                
+             </div>
+         </div>
+     </div>
+ </div>
+
+
+
+
+
+
+    <section id="carousel">
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" id="firstslide">
+                    <img src="img/bg1.jpg" class="d-block w-100" alt="" height="650px" >
+                    <div class="carousel-caption ">
+                       <h1 class="animated bounceInUp" style="animation-delay: 0.2s;"> Welcome to GB Pharma </h1>
+                       <h3 class="animated bounceInUp" style="animation-delay: 0.4s;">Pharmacy with pride....</h3>
+                       <button class="btn btn-info animated bounceInUp" style="animation-delay: 0.7s;">Order Now</button>
+                    </div>
+                </div>
+              
+            </div>
+          </div>
+    </section>
+<br><br>
+    <section id="card">
+        <div class="container my-5">
+
+            <h1 class="center" data-aos="fade-up">Our Services</h1>
+            <hr>
+            <br><br>
+            <div class="row" data-aos="zoom-in">
+                <div class="card col-sm-2.5  my-2 mx-auto "  style="width: 18rem;">
+                    <img src="img/1.png" class="card-img-top" alt="..." height="150px">
+                    <div class="card-body">
+                        <h4 class="card-title">Medicines</h4>
+                        <p class="card-text">We have all types of medicines available. So order now for exciting
+                            offers!!</p>
+                        <a href="#" class="btn btn-primary">Order Now</a>
+                    </div>
+                </div>
+                <div class="card col-sm-2.5 mx-auto my-2 " style="width: 18rem;">
+                    <img src="img/2.png" class="card-img-top" alt="..." height="150px">
+                    <div class="card-body">
+                        <h4 class="card-title">Healthcare Products</h4>
+                        <p class="card-text">We have all types of healthcare products available. So order now for
+                            exciting offers!!</p>
+                        <a href="#" class="btn btn-primary">Order Now</a>
+                    </div>
+                </div>
+                <div class="card col-sm-2.5  my-2 mx-auto " style="width: 18rem; ">
+                    <img src="img/3.png" class="card-img-top" alt="..." height="150px">
+                    <div class="card-body">
+                        <h4 class="card-title">Other Offers</h4>
+                        <p class="card-text">To avail special offers, order medicines and other products now!!</p>
+                        <a href="#" class="btn btn-primary">Order Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+    <br><br>
+    <section id="about">
+        <div class="container">
+            <h1 class="center" data-aos="fade-up" >About Us</h1>
+            <hr>
+            <br><br>
+            <div class="row">
+                <p class="col-sm-6 mx-auto mt-5 center" data-aos="fade-right" >
+                    We provide all types of medicines and healthcare products. My name is Ravi prakash soni ,am an
+                    medical reprsentative,am the owner of GB Pharma group. Our group headquarters is located at the town
+                    <span>Danta</span> in <span>Sikar</span> District. We also provide home delievery.We are the GB pharma group!!
+                </p>
+                <img src="img/4.png" class="col-sm-5 mx-auto " data-aos="fade-left"  alt="....." height="300px">
+            </div>
+        </div>
+    </section>
+<br><br>
+    <section id="contact">
+        <div class="container my-2 " >
+            <h2 class="heading center" data-aos="fade-up">Contact Us</h2>
+            <hr>
+            <br><br>
+            <div class="row" data-aos="zoom-in">
+
+                <div class="col-md-6">
+                    <form>
+                        <input type="Text" name="text" required="" placeholder="Your Name" class="form-control">
+                        <br>
+                        <input type="Email" name="Email" required="" placeholder="Your Email" class="form-control">
+                        <br>
+
+                        <textarea rows="6" placeholder="Message" required="" class="form-control"></textarea>
+                        <br>
+                        <center>
+                            <button class="btn btn-info">Submit</button>
+                        </center>
+                        <br><br><br><br>
+
+                    </form>
+
+                </div>
+
+                <div class="col-md-1"></div>
+
+
+                <div class="col-md-5 address">
+                    <br>
+                    <p class="icn"><i class="fa fa-map-marker"></i> &nbsp;&nbsp; Near panchayat bhawan,Danta
+                        ,Sikar,Rajasthan </p>
+                    <p class="icn"> <i class="fa fa-phone"></i> &nbsp;&nbsp; +919887185913 </p>
+                    <p class="icn"><i class="fa fa-envelope"></i> &nbsp;&nbsp; ravi.bpharma@gmail.com </p>
+
+                    <hr>
+
+                    <div class="media">
+
+                        <ul class="list-unstyled">
+                            <li><a href="#"><i class="fab fa-facebook-f"></a></i></li>
+                            <li><a href="#"> <i class="fab fa-twitter"> </i></a> </li>
+                            <li><a href="#"> <i class="fab fa-instagram"> </i></a> </li>
+                            <li><a href="#"> <i class="fab fa-google-plus-g"> </i></a> </li>
+                            <li><a href="#"> <i class="fab fa-youtube"> </i></a> </li>
+
+
+                        </ul>
+
+                    </div>
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+    <section id="footer">
+        <div class="center my-2"> Copyright &copy; www.gbpharma.com | All Rights Reserved!! </div>
+    </section>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+  AOS.init({
+      offset:250,
+      duration:900
+  });
+  </script>
+</body>
+
+</html>
